@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.familyplan"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.familyplan.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+       
+         <activity android:name="com.ihm.familyplan.activities.AgendaActivity" android:label="@string/agenda">
+              <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+         
+         <activity android:name="com.ihm.familyplan.activities.MealActivity" android:label="@string/meal">
+              <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+         
+         <activity android:name="com.ihm.familyplan.activities.ShopActivity" android:label="@string/shop">
+              <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+         
+         <activity android:name="com.ihm.familyplan.activities.AddActivity" android:label="@string/addLong">
+              <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+         
+         <activity android:name="com.ihm.familyplan.activities.AddPlateActivity" android:label="@string/addLong">
+              <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+         
+         <activity android:name="com.ihm.familyplan.activities.AddIngredientActivity" android:label="@string/addLong">
+              <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+    </application>
+
+</manifest>

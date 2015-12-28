@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".AgendaActivity" >
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="360dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <CalendarView
+            android:id="@+id/calendarView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <ImageButton
+            android:id="@+id/agendaMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@+id/agendaAgenda"
+            android:background="@android:drawable/ic_delete"
+            android:contentDescription="@string/agenda"
+            android:src="@drawable/meal60" />
+
+        <ImageButton
+            android:id="@+id/agendaShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/agendaMeal"
+            android:layout_marginRight="23dp"
+            android:layout_toLeftOf="@+id/agendaAdd"
+            android:background="@android:drawable/ic_delete"
+            android:contentDescription="@string/meal"
+            android:src="@drawable/shop60" />
+
+        <ImageButton
+            android:id="@+id/agendaAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/agendaShop"
+            android:layout_marginRight="18dp"
+            android:background="@android:drawable/ic_delete"
+            android:contentDescription="@string/shop"
+            android:src="@drawable/add60" />
+
+        <ImageButton
+            android:id="@+id/agendaAgenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:drawable/alert_light_frame"
+            android:contentDescription="@string/addLong"
+            android:src="@drawable/agenda60" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/agendaMeal"
+            android:layout_below="@+id/agendaMeal"
+            android:text="@string/meal"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/agendaShop"
+            android:text="@string/addCourt"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignLeft="@id/agendaShop"
+            android:text="@string/shop"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+   
+</FrameLayout>

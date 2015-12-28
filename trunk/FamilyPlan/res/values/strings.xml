@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FamilyPlan</string>
+    <string name="action_settings">Settings</string>
+    <string name="bienvenue">Bienvenue sur FamilyPlan !</string>
+    <string name="agenda">Agenda</string>
+    <string name="meal">Repas</string>
+    <string name="shop">Courses</string>
+    <string name="addLong">Création plat/ingrédient</string>
+    <string name="addCourt">Création</string>
+    <string name="plate">Créer un plat</string>
+    <string name="ingredient">Créer un ingrédient</string>
+    <string name="labelIng">Saisir un ingrédient : </string>
+    <string name="create">Créer</string>
+    <string name="labelChoiceIng">Choisir les ingrédients : </string>
+
+</resources>
